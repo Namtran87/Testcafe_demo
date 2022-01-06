@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: TestCafe workflow
+
+# Controls when the workflow will run
+on:[push]
+
+jobs:
+
+  build:
+      name: Run Testcafe Tests
+      runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Testcafe from npm and Run Tests
+       uses: DevExpress/testcafe-action@latest
+        with:
+        args: "chrome tests"
+
+    
