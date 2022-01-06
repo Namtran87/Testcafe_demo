@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "testcafe chrome Tests\test.js"
+  },
+  "dependencies": {
+    "testcafe-browser-provider-browserstack": "^1.13.2-alpha.1",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "testcafe": "^1.17.1",
+    "testcafe-reporter-agent-js-testcafe": "npm:@reportportal/testcafe-reporter-agent-js-testcafe@^5.0.0",
+    "testcafe-reporter-reportportal": "^1.0.29",
+    "testcafe-reporter-reportportal-plugin": "^0.4.5"
+  }
+}
